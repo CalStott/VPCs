@@ -6,7 +6,7 @@ A **private network within a public cloud provider's infrastructure** where you 
 
 (Like building a private data centre inside the cloud, but with the scalability and flexibility benefits that come with cloud computing)
 
-![VPC Overview](./images/vpc_overview.png)
+![Luke's VPC Diagram](./images/luke_vpc_diagram.png)
 
 ## How do VPCs help a business?
 
