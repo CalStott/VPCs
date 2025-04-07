@@ -2,7 +2,7 @@
 
 ## What is a VPC?
 
-A **private, isolated network within a public cloud provider's infrastructure** where you can define and control your virtual network environment e.g. IP address ranges, subnets, route tables and network gateways
+A **private network within a public cloud provider's infrastructure** where you can define and control your virtual network environment e.g. IP address ranges, subnets, route tables and network gateways. It is the next step in security after making a security group.
 
 (Like building a private data centre inside the cloud, but with the scalability and flexibility benefits that come with cloud computing)
 
@@ -10,7 +10,9 @@ A **private, isolated network within a public cloud provider's infrastructure** 
 
 ## How do VPCs help a business?
 
-VPCs provide businesses with **full control over their cloud networking environment, enabling them to securely launch and manage resources** (like EC2 instances) in a private, isolated space that mirrors their on-premises network.
+VPCs provide businesses with **full control over their cloud networking environment**, enabling them to securely launch and manage resources (like EC2 instances) in a private, isolated space that mirrors their on-premises network.
+
+Gives the speed and scalability of public cloud but with the security of private cloud.
 
 Some benefits include:
 - **Enhanced Security and Isolation** - Allows control over their network boundaries. Can segregate environments within the same cloud account e.g. dev, staging, production
@@ -22,14 +24,14 @@ Some benefits include:
 
 ## How do VPCs help DevOps?
 
-VPCs help DevOps by **providing secure, customisable, and isolated network environments that support automated infrastructure and smooth CI/CD workflows**. They enable safe testing, efficient scaling, and controlled access, all of which are essential for reliable and agile DevOps practices.
+VPCs help DevOps by **providing secure, customisable, and isolated network environments that support automated infrastructure and smooth CI/CD workflows**. They enable safe testing, efficient scaling and controlled access, all of which are essential for reliable and agile DevOps practices.
 
 Some key points are:
 - **Automation** - Fully scriptable network setup as VPC configurations can be defined as code using Terraform or AWS CloudFormation
+- **Monitoring** - VPC flow logs and integrated monitoring e.g. AWS CloudWatch
 - **Isolation** - Safe testing and deployment environments
 - **Security** - Fine-grained access controls e.g. security groups
 - **Scalability** - Auto-scaling and elastic networking
-- **Observability** - VPC flow logs and integrated monitoring e.g. AWS CloudWatch
 - **Deployment Speed** - Fast provisioning and tear-down of environments
 
 ## Why did Amazon Web Services (AWS) introduce VPCs?
@@ -67,12 +69,12 @@ An Internet Gateway is a horizontally scaled, redundant component that **connect
  
 ### Route Tables
 
-A route table **defines how traffic is directed within your VPC and outside it**.
+A route table **defines how network traffic is directed within your VPC and outside it**.
 
 - Each subnet must be associated with one route table.
 - Routes tell traffic where to go — e.g. 0.0.0.0/0 to the internet gateway.
 - Private subnets don’t have a route to an internet gateway (only to a NAT gateway, if needed).
- 
+
 ### Security Groups (SG) and how SGs work on an INSTANCE level
 
 A Security Group is a **virtual firewall that controls inbound and outbound traffic to/from EC2 instances**.
@@ -85,3 +87,5 @@ A Security Group is a **virtual firewall that controls inbound and outbound traf
   - Source/destination (e.g. 0.0.0.0/0 or another SG)
 
 You can **assign multiple SGs to an instance and modify rules without restarting the instance**.
+
+Network Access Control Groups (NACL) are like security groups for a subnet rather than a specific instance. Allow for greater privatisation and customisability.
