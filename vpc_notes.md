@@ -13,12 +13,12 @@ A **private, isolated network within a public cloud provider's infrastructure** 
 VPCs provide businesses with **full control over their cloud networking environment, enabling them to securely launch and manage resources** (like EC2 instances) in a private, isolated space that mirrors their on-premises network.
 
 Some benefits include:
-- **Enhanced Security and Isolation**: Allows control over their network boundaries. Can segregate environments within the same cloud account e.g. dev, staging, production
-- **Customisable Network Architecture**: Can create private subnets for databases and public subnets for web servers
+- **Enhanced Security and Isolation** - Allows control over their network boundaries. Can segregate environments within the same cloud account e.g. dev, staging, production
+- **Customisable Network Architecture** - Can create private subnets for databases and public subnets for web servers
 - **Cost Efficiency**: Only pay for resources that are used
-- **Secure Connectivity to Other Networks**: VPC Peering allows secure communication between different VPCs supporting multi-team setups
-- **Improved Agility and Speed**: Can experiment without affecting production environments encouraging faster innovation
-- **Compliance and Governance**: Easier to audit, log and monitor network activity for compliance purposes
+- **Secure Connectivity to Other Networks** - VPC Peering allows secure communication between different VPCs supporting multi-team setups
+- **Improved Agility and Speed** - Can experiment without affecting production environments encouraging faster innovation
+- **Compliance and Governance** - Easier to audit, log and monitor network activity for compliance purposes
 
 ## How do VPCs help DevOps?
 
