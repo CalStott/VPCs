@@ -103,7 +103,7 @@
 - Click **Save changes** in the bottom-right corner of the page
 
 ### Optional: Check Setup
-- Navigate to **Your VPCs**
+- Navigate to **Your VPCs**  
 ![VPC Navigation 2](./images/vpc_deployment/vpc_nav2.png)
 - Click the **VPC ID** link for your VPC
 - Check the **Resource map** tab, it should look like this:
